@@ -34,11 +34,16 @@ android {
 
 dependencies {
 
+    // Annotation processor
+    def lifecycle_version = "2.6.1"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
-    implementation 'io.insert-koin:koin-android:3.4.2'
-    implementation 'com.hannesdorfmann:adapterdelegates4:4.3.2'
+ //   implementation 'io.insert-koin:koin-android:3.4.2'
+//    implementation 'com.hannesdorfmann:adapterdelegates4:4.3.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
 
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
